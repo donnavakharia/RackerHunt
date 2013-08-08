@@ -12,7 +12,7 @@ MANAGERS = ADMINS
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3', # Add 'postgresql_psycopg2', 'mysql', 'sqlite3' or 'oracle'.
-        'NAME': '/Users/donn6386/Downloads/rackerladies/mysite/sqlite3.db',                      # Or path to database file if using sqlite3.
+        'NAME': '/mysite/sqlite3.db',                      # Or path to database file if using sqlite3.
         'USER': '',                      # Not used with sqlite3.
         'PASSWORD': '',                  # Not used with sqlite3.
         'HOST': '',                      # Set to empty string for localhost. Not used with sqlite3.
@@ -107,9 +107,7 @@ ROOT_URLCONF = 'mysite.urls'
 WSGI_APPLICATION = 'mysite.wsgi.application'
 
 TEMPLATE_DIRS = (
-    '/Users/donn6386/Downloads/rackerladies/mysite/mytemplates',
-    '/Users/donn6386/Downloads/rackerladies/mysite/poll_templates',
-    '/Users/donn6386/Downloads/rackerladies/mysite/rackerhunt_templates',
+    '/mysite/rackerhunt_templates',
     # Put strings here, like "/home/html/django_templates" or "C:/www/django/templates".
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
@@ -126,7 +124,6 @@ INSTALLED_APPS = (
     'django.contrib.admin',
     # Uncomment the next line to enable admin documentation:
     'django.contrib.admindocs',
-    'polls',
     'rackerhunt',
 )
 

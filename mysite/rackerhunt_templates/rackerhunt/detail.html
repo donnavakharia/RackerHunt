@@ -1,0 +1,17 @@
+<br>
+<br>
+<body bgcolor="red"><b></b>
+<center><img src="https://9f1fa76a-a-62cb3a1a-s-sites.googlegroups.com/site/donna006/Racker_Hunt.png?attachauth=ANoY7crBuP3OhM97P7feIMjEOBvgS_nSuMWvAhna_NsCA3EuzYpmWl-TkCDOnGKSEvrsuq6ZvVPxW6TloI3Oaq6xbyTbhMEb_ul9V95Oxpy-FMY8d67_UfL7qciKEP2Un1U5ag8P6sEuPrfz6rVfH5vK8ahuTJR5AJFYfBJqCNBequd_c2AwOxGLnLS7VeUOR9er8OhRPJzjaWocGEguEp5h28o1WBfKGQ%3D%3D&attredirects=0" height="150" width="550">
+</center><br>
+<br>
+<table border=1 align="center">
+<tr>
+<th></th><th>UserName</th><th># of Followers</th><th>Score</th><th>Email</th>
+
+{% for result in result_list %}
+      <!-- <li><a href="/jobs/{{ result.id }}/">{{ result.name }} </a></li> -->
+        <tr><td> <img src="{{ result.pic_url }}"></img></td><td><a href="/jobs/{{ result.id }}/results">{{ result.name }}</a></td><td>{{ result.num_followers }}</td> <td>{{ result.github_score }}</td> <td>{{ result.email }}</td>
+    </tr>
+    {% endfor %}
+</tr>
+</table>
